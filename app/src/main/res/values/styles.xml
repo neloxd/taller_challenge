@@ -1,0 +1,474 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppThemeNoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:textColorSecondary">@color/black_sigo</item>
+        <item name="android:textColorPrimary">@color/black_sigo</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorPrimary">@color/black_sigo</item>
+        <item name="colorPrimaryDark">@color/yellow_sigo</item>
+        <item name="colorAccent">@color/black_sigo</item>
+
+        <item name="textAppearanceHeadline1">@style/TextAppearance.MaterialComponents.Headline1
+        </item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.MaterialComponents.Headline2
+        </item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.MaterialComponents.Headline3
+        </item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MaterialComponents.Headline4
+        </item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MaterialComponents.Headline5
+        </item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MaterialComponents.Headline6
+        </item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MaterialComponents.Subtitle1
+        </item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MaterialComponents.Subtitle2
+        </item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MaterialComponents.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MaterialComponents.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="primary_button" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/primary_button</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="secondary_button" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:enabled">true</item>
+        <item name="android:background">@drawable/secondary_button</item>
+        <item name="android:backgroundTint">@color/warning</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="AppThemeNoActionBar.secondary_button">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/button_text_color</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/secondary_button</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="third_button" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/third_button</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/white_color</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="options_button" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/third_button</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/specific_background_3</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="AppThemeNoActionBar.ProgressWhiteAccent">
+        <item name="android:windowBackground">@drawable/launcher_screen</item>
+        <item name="android:progressBarStyle">?android:attr/progressBarStyleLarge</item>
+        <item name="colorAccent">@color/white_color</item>
+    </style>
+
+    <style name="editTextDesign" parent="TextAppearance.AppCompat">
+        <!--EditText hint color-->
+        <item name="android:textColor">@color/background_color</item>
+        <!-- TextInputLayout text color-->
+        <item name="colorControlActivated">@color/black_color</item>
+        <!-- EditText line color when EditText on-focus-->
+        <item name="colorControlHighlight">@color/black_color</item>
+        <!-- EditText line color when EditText  in un-focus-->
+        <item name="colorControlNormal">@color/black_color</item>
+    </style>
+
+    <style name="EditTextTheme">
+        <item name="android:textColorSecondary">@color/white_color</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="colorControlActivated">#FFFFFF</item>
+        <item name="colorControlHighlight">#FFFFFF</item>
+    </style>
+
+    <style name="ProgressWhiteAccent">
+        <item name="android:progressBarStyle">?android:attr/progressBarStyleLarge</item>
+        <item name="colorAccent">@color/primaryDarkColor</item>
+    </style>
+
+    <style name="Widget.App.NavigationView" parent="Widget.MaterialComponents.NavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.NavigationView</item>
+        <item name="itemIconTint">@color/warning</item>
+        <item name="itemTextColor">@color/black_sigo</item>
+    </style>
+
+    <style name="ThemeOverlay.App.NavigationView" parent="">
+        <item name="colorPrimary">@color/white_sigo</item>
+        <item name="colorSurface">@color/white_sigo</item>
+        <item name="colorOnSurface">@color/white_sigo</item>
+        <item name="textAppearanceSubtitle2">@style/Body3</item>
+        <item name="iconTint">@color/warning</item>
+        <item name="iconSize">14dp</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline6" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/rubik</item>
+        <item name="android:fontFamily">@font/rubik</item>
+    </style>
+
+    <style name="TextAppearance.App.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/rubik</item>
+        <item name="android:fontFamily">@font/rubik</item>
+    </style>
+
+    <style name="TextAppearance.App.Body2" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/rubik</item>
+        <item name="android:fontFamily">@font/rubik</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="Headline01">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">48sp</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textColor">@color/black_sigo</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="Headline02">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">40sp</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textColor">@color/black_sigo</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="Headline03">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">28sp</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textColor">@color/black_sigo</item>
+    </style>
+
+    <style name="Subheadline">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">22sp</item>
+        <item name="fontWeight">500</item>
+        <item name="android:textColor">@color/black_sigo</item>
+        <item name="lineHeight">32sp</item>
+    </style>
+
+    <style name="title01">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontWeight">500</item>
+        <item name="android:textColor">@color/black_sigo</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+
+    <style name="title02">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontWeight">500</item>
+        <item name="android:textColor">@color/black_sigo</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+
+
+    <style name="Body01">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textColor">@color/black_sigo</item>
+        <item name="lineHeight">26sp</item>
+    </style>
+
+    <style name="Body02">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textColor">@color/black_sigo</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+
+    <style name="Caption">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textColor">@color/black_sigo</item>
+        <item name="lineHeight">16sp</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontWeight">500</item>
+        <item name="android:textColor">@color/black_sigo</item>
+        <item name="lineHeight">19sp</item>
+    </style>
+
+    <style name="Button.Primary" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="backgroundTint">@drawable/menu_option_button</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textAppearance">@style/Button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/menu_option_text</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/custom_test</item>
+    </style>
+
+    <style name="Button.PrimaryTwo" parent="Widget.MaterialComponents.Button.UnelevatedButton">
+        <item name="backgroundTint">@drawable/menu_option_button_white</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textAppearance">@style/Button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/menu_option_text</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/custom_test</item>
+    </style>
+
+    <style name="Button.Secondary" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textAppearance">@style/Button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/menu_option_text</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:background">@drawable/outline</item>
+        <item name="backgroundTintMode">multiply</item>
+    </style>
+
+    <style name="Button.Secondary.Two" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textAppearance">@style/Button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/menu_option_text</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/outline_white</item>
+        <item name="backgroundTint">@drawable/menu_option_button_white</item>
+        <item name="backgroundTintMode">multiply</item>
+    </style>
+
+    <style name="Button.option" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:textAppearance">@style/Button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/menu_option_text</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:background">@drawable/outline</item>
+        <item name="backgroundTintMode">multiply</item>
+    </style>
+
+    <style name="Button.Text.Style.Tertiary" parent="Button">
+
+    </style>
+
+    <style name="Button.Tertiary" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="backgroundTint">@color/white_color</item>
+        <item name="android:textAppearance">@style/Button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/tertiary_button_text_selector</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/tertiary_button_ripple</item>
+    </style>
+
+    <style name="Button.Header" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="backgroundTint">@color/white_color</item>
+        <item name="android:textAppearance">@style/Button</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/gray_600</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/tertiary_button_ripple</item>
+    </style>
+
+    <style name="TextInputLayout.default" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="background">@color/specific_background_2</item>
+    </style>
+
+    <style name="label">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textColor">@color/black_sigo</item>
+        <item name="lineHeight">14sp</item>
+    </style>
+
+    <style name="statusBar">
+        <item name="android:statusBarColor">@color/black_sigo</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="AppTextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/round_corners</item>
+    </style>
+
+    <style name="EditTextHint" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/rubik</item>
+    </style>
+
+    <style name="InputTextField" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundColor">@color/gray_50</item>
+        <item name="endIconMode">custom</item>
+        <item name="endIconTint">@color/black_sigo</item>
+        <item name="hintTextAppearance">@style/label</item>
+    </style>
+
+    <style name="H1Headline">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <style name="H2Headline">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <style name="H3Headline">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <style name="H4Headline">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="H5Headline">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="H6Headline">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="Subtitle1">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Body1">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Subtitle2">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Body2">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Body3">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Overline">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+    <style name="BodyHighlighted">
+        <item name="android:fontFamily">@font/rubik</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontWeight">400</item>
+        <item name="android:textColor">@color/black_sigo</item>
+        <item name="lineHeight">24sp</item>
+    </style>
+
+    <style name="EditText.Global" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:background">@drawable/global_input_01_background</item>
+        <item name="android:ems">10</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textColor">@color/black_sigo</item>
+        <item name="android:textSize">16sp</item>
+        <item name="boxStrokeColor">@color/global_input_stroke</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="boxStrokeWidth">0dp</item>
+    </style>
+
+    <style name="ThemeOverlay.NumberPicker" parent="">
+        <item name="android:textSize">32sp</item>
+        <item name="colorControlNormal">@color/gray_200</item>
+    </style>
+
+    <style name="MySpinnerDatePickerStyle" parent="android:Theme.Material.Dialog">
+        <item name="android:datePickerStyle">@style/MySpinnerDatePicker</item>
+        <item name="backgroundColor">@color/white_sigo</item>
+    </style>
+
+    <style name="MySpinnerDatePicker" parent="android:Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+    </style>
+
+</resources>

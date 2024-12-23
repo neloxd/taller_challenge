@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/specific_background_3" android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/specific_background_3" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <item android:color="@color/specific_semantic_primary_pressed" android:state_focused="true"  android:state_activated="true">
+        <shape>
+            <solid android:color="@color/specific_semantic_primary_pressed" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <item android:color="@color/specific_semantic_primary_default"  android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/specific_semantic_primary_default" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <item android:color="@color/specific_semantic_primary_default" android:state_enabled="true">
+        <shape>
+            <solid android:color="@color/specific_semantic_primary_default" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+    <item android:color="@color/specific_semantic_primary_default">
+        <shape>
+            <solid android:color="@color/specific_semantic_primary_default" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+</selector>

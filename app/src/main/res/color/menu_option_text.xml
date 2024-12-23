@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/specific_content_state_disable" android:state_enabled="false">
+    </item>
+    <item android:color="@color/black_sigo"  android:state_activated="true">
+    </item>
+    <item android:color="@color/black_sigo" android:state_enabled="true">
+    </item>
+    <item android:color="@color/black_sigo">
+    </item>
+</selector>

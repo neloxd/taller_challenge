@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:state_focused="false" android:color="@color/yellow_sigo"></item>
+    <item android:state_focused="true" android:color="@color/specific_background_inverse_1"></item>
+    <item android:color="@color/gray_600"></item>
+
+
+
+
+</selector>
